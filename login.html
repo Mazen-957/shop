@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Log In</title>
+</head>
+
+<body>
+    <div class="project">
+        <div class="new">
+            <div class="right">
+                <p>
+                    Already have an account ?
+                </p>
+                <a href="sign-up.html">
+                    Sign In
+                    <i class=" fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sign-form">
+                <div class="top">
+                    <span>Sing in to Just Shopping </span>
+                </div>
+                <form id="f1">
+                    <div class="input-box">
+                        <label for="email" class="lab">Email </label>
+                        <input type="email" id="email" class="input-feild" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="pass" class="lab">Password</label>
+                        <input type="password" id="pass" class="input-feild" placeholder="Password" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="user" class="lab">Username</label>
+                        <input type="text" id="user" name="user-inp" class="input-feild" placeholder="Username"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <label for="selct" class="lab">Country</label>
+                        <select name="" id="selct">
+                            <option>Egypt</option>
+                            <option>America</option>
+                            <option>China</option>
+                            <option>Russia</option>
+                            <option>Germany</option>
+                        </select>
+                    </div>
+                    <div class="create">
+                        <span>Email preferences</span>
+                        <div class="rem-me">
+                            <input type="checkbox" id="chek">
+                            <label for="chek">
+                                Receive occasional product updates and announcements
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <button type="submit" class="inp-submit">
+                            Sign In
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </button>
+                    </div>
+                    <div class="details">
+                        <p>By creating an account, you agree to the
+                            <a href="#"> Terms of Service.</a>
+                            For more information about GitHub's privacy practices, see the
+                            <a href="#"> Just Shopping Privacy Statement.</a>
+                            We'll occasionally send you account-related emails.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('f1').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Hi ' + e.target.user.value + ' Welcome Back');
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+
+</html>

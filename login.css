@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Funnel+Display:wght@300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arvo;
+}
+
+body {
+    background: url(first-img.jpg)center/cover no-repeat;
+    height: 100vh;
+}
+
+.project {
+    backdrop-filter: brightness(50%);
+    height: 103vh;
+}
+
+.new {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 40px 0 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.right a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    gap: 5px;
+    color: rgb(115, 115, 179);
+    transition: .2s;
+}
+
+.right a:hover i {
+    transform: translateX(5px);
+}
+
+.right a i {
+    font-size: 12px;
+    margin-top: 3px;
+    transition: .3s;
+}
+
+/* <-----------------------------------------------------> */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.sign-form {
+    position: relative;
+    width: 500px;
+    padding: 1.5em 1.5em 2em;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 19px 2px black;
+    border-radius: 15px;
+}
+
+.top {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0 10px;
+}
+
+.input-feild {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    padding-inline-start: 20px;
+    outline: none;
+    transition: .2s;
+}
+
+.input-feild:focus {
+    transform: translate(-1px, 1px);
+}
+
+.lab {
+    margin: 0 5px 5px;
+    font-size: 15px;
+}
+
+.create {
+    margin: 20px 9px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.create .rem-me label {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+
+.inp-submit {
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 7px;
+    border: none;
+    background-color: rgb(46, 29, 29);
+    color: white;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.inp-submit:hover {
+    background-color: rgb(73, 62, 62);
+}
+
+.details {
+    font-size: 13px;
+    color: rgb(199, 199, 209);
+}
+
+.details a {
+    color: rgb(0, 0, 53);
+}
+
+.side {
+    display: flex;
+    gap: 10px;
+}
+
+.input-box[type],
+select {
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    padding-inline-start: 20px;
+    outline: none;
+    transition: .2s;
+}
